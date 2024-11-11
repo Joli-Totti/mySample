@@ -28,7 +28,7 @@ jobs:
           aws-region: ap-northeast-1
 
       - name: Serverless Deploy
-        working-directory: ./serverless
+        working-directory: ./serverless/functions
         run: |
           npm install -g serverless@2
           npm install -g serverless-step-functions
