@@ -22,6 +22,6 @@ functions:
   lambda_function:
     handler: handler.lambda_handler
     name: dev-function
-    role: arn:aws:iam:713881825349:role/lambda-test-role
+    role: arn:aws:iam::713881825349:role/lambda-test-role
     disableLogs: true
     timeout: 900
