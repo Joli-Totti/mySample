@@ -13,7 +13,7 @@ provider:
   stage: ${opt:stage, self:custom.defaulStage}
   deploymentBucket:
     name: xxx-zzz-sample
-  memrySize: 128
+  memorySize: 128
 
 custom:
   defaultStage: dev
