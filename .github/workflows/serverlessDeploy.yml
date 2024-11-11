@@ -22,7 +22,8 @@ jobs:
       - name: AWS credentials
         uses: aws-actions/configure-aws-credentials@v4.0.2
         with:
-          role-to-assume: ${{ secrets.ASSUME_ROLE_ARN }}
+#          role-to-assume: ${{ secrets.ASSUME_ROLE_ARN }}
+          role-to-assume: "arn:aws:iam::713881825349:role/TerraformRole"
           role-session-name: GitHunActions-${{ github.run_id }}
           aws-region: ap-northeast-1
 
