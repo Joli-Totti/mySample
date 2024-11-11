@@ -35,4 +35,4 @@ jobs:
           npm install -g serverless-python-requirements
           npm install -g serverless-lambda-layers
           
-          serverless deploy -V --stage dev
+          serverless deploy -v --stage dev
