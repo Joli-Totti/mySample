@@ -1,5 +1,5 @@
-name: serverless
-run-name: serverless
+name: testserverless
+run-name: testserverless
 
 on:
   workflow_dispatch:
