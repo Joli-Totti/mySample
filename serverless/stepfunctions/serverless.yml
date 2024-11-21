@@ -1,3 +1,6 @@
+plugins:
+  - serverless-step-functions
+
 service: ${opt:stage}-stepfunction
 
 frameworkVersion: '2'
