@@ -22,7 +22,7 @@ stepFunctions:
   stateMachines:
     name: dev-stepfunction
     definition:
-      StartAs: test1
+      StartAt: test1
       States:
         test1:
           Type: Task
