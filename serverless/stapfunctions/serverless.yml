@@ -1,0 +1,27 @@
+service: ${opt:stage}-stepfunction
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+  region: ap-northeast-1
+  stage: ${opt:stage, self:custom.defaulStage}
+  deploymentBucket:
+    name: xxx-zzz-sample
+  memorySize: 128
+
+custom:
+  defaultStage: dev
+
+stepFunctions:
+  stateMachines:
+    name: dev-stepfunction
+    definition:
+      StartAs: test1
+      States:
+        test1:
+          Type: Task
+          Rsource: arn:aws:lambda:ap-northeast-1:713881825349:function:dev-function
+          End: true
