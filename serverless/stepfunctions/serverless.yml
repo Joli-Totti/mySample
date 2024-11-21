@@ -21,6 +21,7 @@ custom:
 stepFunctions:
   stateMachines:
     name: dev-stepfunction
+    role: arn:aws:iam::713881825349:role/stepfunctions-test-role
     definition:
       StartAt: test1
       States:
